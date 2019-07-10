@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.aniket"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.screens.HomeScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.screens.AllSessions"
+            android:label="@string/AllSessions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.DeleteSessions"
+            android:label="@string/DeleteSessions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.SessionScreen"
+            android:label="@string/SessionScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.AddPersonScreen"
+            android:label="@string/AddPersonScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.ResultScreen"
+            android:label="@string/ResultScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.AddTransactionScreen"
+            android:label="@string/AddTransactionScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.CreateSessionScreen"
+            android:label="@string/CreateSessionScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.UpdatePersonScreen"
+            android:label="@string/UpdatePersonScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.UpdateTransactionScreen"
+            android:label="@string/UpdateTransactionScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.screens.MasterActivity"
+            android:label="@string/title_activity_master" >
+        </activity>
+        <activity
+            android:name="org.screens.AllTransactionsScreen"
+            android:label="@string/AllTransactionsScreen"            >
+        </activity>
+         <activity
+            android:name="org.screens.AllPersonScreen"
+            android:label="@string/AllPersonScreen">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+</manifest>

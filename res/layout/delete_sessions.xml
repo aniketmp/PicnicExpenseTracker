@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.screens.HomeScreen" 
+    android:background="@color/backGroundColor">
+
+    <ListView
+        android:id="@+id/sessions"
+        android:background="@color/backGroundColor"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+	<!-- Button android:id="@+id/backToHomeScreen" 
+    	android:text="@string/backToHomeScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" 
+        android:background="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"/-->
+        
+        <TextView 
+	   	  android:id="@+id/emptyText"
+	      android:layout_width="fill_parent"
+	      android:layout_height="30dp"
+	      style="@style/CodeFont"	      	      
+	  	  android:text="No session to delete." />
+	
+	<Button android:id="@+id/delete" 
+    	android:text="@string/deleteSessions"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" 
+        android:background="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"/>
+	
+</LinearLayout>

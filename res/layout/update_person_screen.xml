@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    tools:context="org.screens.AddPersonScreen">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        style="@style/CodeFont"
+        android:text="Person name:" />
+
+    
+    <EditText
+        android:id="@+id/updatePersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+    
+    <Button
+        android:id="@+id/updatePersonToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/updatePersonName"
+        android:text="Update" />
+
+     <Button
+         android:id="@+id/deletePersonToList"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/updatePersonName"
+         android:layout_toRightOf="@+id/updatePersonToList"
+         android:text="Delete" />
+
+     <Button
+         android:id="@+id/cancelUpdatePersonToList"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/updatePersonName"
+         android:layout_toRightOf="@+id/deletePersonToList"
+         android:text="Cancel" />
+
+</RelativeLayout>
